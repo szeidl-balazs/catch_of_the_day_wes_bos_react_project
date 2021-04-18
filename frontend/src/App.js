@@ -1,11 +1,20 @@
 import React from 'react';
-import './App.css';
+import './css/style.css';
 import StorePicker from './Components/StorePicker';
+import Header from './Components/Header';
+import Inventory from './Components/Inventory';
+import Order from './Components/Order';
 
 function App() {
   return (
-    <div className="App">
+    <div className="catch-of-the-day">
       <StorePicker/>
+      <div className="menu">
+        <Header />
+      </div>
+      <Order /> 
+      <Inventory />
+         
     </div>
   );
 }
