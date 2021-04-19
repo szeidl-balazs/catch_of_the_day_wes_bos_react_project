@@ -10,7 +10,7 @@ function App() {
     <div className="catch-of-the-day">
       <StorePicker/>
       <div className="menu">
-        <Header />
+        <Header tagline="Fresh Seafood Market"/>
       </div>
       <Order /> 
       <Inventory />
