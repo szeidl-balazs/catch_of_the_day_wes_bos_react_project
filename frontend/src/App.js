@@ -5,6 +5,8 @@ import Header from './Components/Header';
 import Inventory from './Components/Inventory';
 import Order from './Components/Order';
 import SampleFishes from '../src/Components/SampleFishes';
+import Fish from './Components/Fish';
+/*import { v4 as uuidv4 } from 'uuid';*/
 
 class App extends React.Component {
 
@@ -41,6 +43,9 @@ class App extends React.Component {
         <StorePicker/>
         <div className="menu">
           <Header tagline="Fresh Seafood Market"/>
+            <ul className="fishes">
+              {Object.keys(this.state.fishes).map(key => <Fish key={key} details={this.state.fishes[key]}/>)}
+            </ul>
         </div>
         <Order /> 
         <Inventory addFish ={this.addFish} loadSampleFishes={this.loadSampleFishes}/>
