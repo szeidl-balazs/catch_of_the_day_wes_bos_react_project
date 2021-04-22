@@ -1,0 +1,185 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url(./images/pikist.jpg) repeat;
+  background-size: cover;
+  color: tomato;
+  text-shadow: black -1px 1px;
+}
+
+#root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  /*h1, h2, h3 {
+		color: white;
+		-webkit-text-stroke: 1px black;
+	}*/
+}
+
+.app-container .catch-of-the-day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 10px;
+}
+
+.app-container .inventory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-container .inventory .fish-edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-container .inventory .fish-edit input, .app-container .inventory textarea, .app-container .inventory select, .app-container .inventory button {
+  margin: 5px;
+}
+
+.app-container h1 {
+  margin: 15px 0;
+}
+
+.app-container h2 {
+  margin: 10px 0;
+}
+
+.app-container .tagline {
+  text-align: center;
+}
+
+.app-container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-container .menu-fish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(./images/stone_background.jpg);
+  background-size: cover;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 20px;
+  -webkit-box-shadow: black -2px 2px;
+          box-shadow: black -2px 2px;
+}
+
+.app-container .menu-fish .description {
+  text-align: justify;
+  width: 235px;
+}
+
+.app-container img {
+  border-radius: 10px;
+  margin: 0 0 15px 0;
+}
+
+.app-container .order-wrap {
+  background-image: url(./images/stone_background.jpg);
+  background-size: cover;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 20px;
+  -webkit-box-shadow: black -2px 2px;
+          box-shadow: black -2px 2px;
+}
+
+.app-container .order-wrap li {
+  margin: 15px;
+}
+/*# sourceMappingURL=App.css.map */

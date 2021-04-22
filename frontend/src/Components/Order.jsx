@@ -53,7 +53,7 @@ class Order extends React.Component {
 						})
 					}
 				</ul>				
-				<div className="total"><strong>{`Total: ${formatPrice(total)}`}</strong></div>
+				<h3 className="total"><strong>{`Total: ${formatPrice(total)}`}</strong></h3>
 			</div>
 		);
 	}

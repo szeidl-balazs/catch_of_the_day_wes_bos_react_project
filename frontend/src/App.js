@@ -1,5 +1,6 @@
 import React from 'react';
 //import './css/style.css';
+import './App.css';
 import StorePicker from './Components/StorePicker';
 import Header from './Components/Header';
 import Inventory from './Components/Inventory';
@@ -50,23 +51,28 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="catch-of-the-day">
-        <StorePicker/>
-        <div className="menu">
-          <Header tagline="Fresh Seafood Market"/>
-            <ul className="fishes">
-              {Object.keys(this.state.fishes).map(key => 
-              <Fish 
-                key={key} 
-                details={this.state.fishes[key]} 
-                addToOrder={this.addToOrder}
-                index={key}
-              />)}
-            </ul>
+      <div className="app-container">
+
+        <div className="catch-of-the-day">
+
+          <StorePicker/>
+          <div className="menu">
+            <Header tagline="Fresh Seafood Market"/>
+              <ul className="fishes">
+                {Object.keys(this.state.fishes).map(key => 
+                <Fish 
+                  key={key} 
+                  details={this.state.fishes[key]} 
+                  addToOrder={this.addToOrder}
+                  index={key}
+                />)}
+              </ul>
+          </div>
+          <Order fishes={this.state.fishes} order={this.state.order}/> 
+          <Inventory addFish ={this.addFish} loadSampleFishes={this.loadSampleFishes}/>
+                
         </div>
-        <Order fishes={this.state.fishes} order={this.state.order}/> 
-        <Inventory addFish ={this.addFish} loadSampleFishes={this.loadSampleFishes}/>
-           
+
       </div>
     );
   

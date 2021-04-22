@@ -13,7 +13,8 @@ class StorePicker extends React.Component {
 		//get the input value
 		const storeName = this.myInput.current.value;
 		//change the page to whatever
-		this.props.history.push(`/store/${storeName}`)
+		return this.props.history.push(`/store/${storeName}`);
+		//console.log(storeName);
 	};
 
 	render() {
