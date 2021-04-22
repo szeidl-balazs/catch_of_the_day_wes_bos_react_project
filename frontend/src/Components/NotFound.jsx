@@ -1,4 +1,5 @@
 import React from 'react';
+//Not found component
 
 const NotFound = () => {
 

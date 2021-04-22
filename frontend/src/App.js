@@ -10,6 +10,7 @@ import Fish from './Components/Fish';
 
 class App extends React.Component {
 
+  //create state
   state = {
     fishes: {},
     order: {}
@@ -32,10 +33,12 @@ class App extends React.Component {
     console.log('adding a fish');
   }
 
+  //make a function to set the state to an object of fishes from sampleFishes
   loadSampleFishes = () => {
     this.setState({fishes: SampleFishes});
   };
 
+  //make a function to add to order state an order
   addToOrder = (key) => {
     //1. take a copy of state
     const order = { ...this.state.order };

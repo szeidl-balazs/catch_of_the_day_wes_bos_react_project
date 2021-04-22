@@ -6,6 +6,7 @@ class StorePicker extends React.Component {
 
 	myInput = React.createRef();
 
+	//make a function to select store
 	goToStore = (event) => {
 		//stop the form from submitting
 		event.preventDefault();

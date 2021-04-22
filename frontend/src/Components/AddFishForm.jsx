@@ -1,4 +1,5 @@
 import React from 'react';
+//Component to create new fish
 
 class AddFishForm extends React.Component {
 
@@ -8,6 +9,8 @@ class AddFishForm extends React.Component {
 	descRef = React.createRef();
 	imageRef = React.createRef();
 
+
+//Function to create new fish from fish form inputs
 	createFish = (event) => {
 		event.preventDefault();
 

@@ -3,9 +3,10 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import StorePicker from './StorePicker';
 import App from '../App';
 import NotFound from './NotFound';
+//make a Router component to switch between pages
 
 const Router = () => {
-	
+		
 	return (
 	<BrowserRouter>
 		<Switch>

@@ -1,5 +1,6 @@
 import React from 'react';
 import AddFishForm from './AddFishForm';
+//Inventory component to add new fishes to state to be selected
 
 class Inventory extends React.Component {
 
