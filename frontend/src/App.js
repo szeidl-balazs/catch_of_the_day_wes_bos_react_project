@@ -26,7 +26,7 @@ class App extends React.Component {
     //2. add new fish to that fishes variable
     fishes[`fish${Date.now()}`] = fish;
 
-    //3. Set the new fishes onject to state
+    //3. Set the new fishes object to state
     this.setState({
       fishes: fishes
     });
@@ -52,12 +52,13 @@ class App extends React.Component {
   render() {
     return (
       <div className="app-container">
-
+        <Header tagline="Fresh Seafood Market"/>
+        <Order fishes={this.state.fishes} order={this.state.order}/> 
         <div className="catch-of-the-day">
 
           <StorePicker/>
           <div className="menu">
-            <Header tagline="Fresh Seafood Market"/>
+            
               <ul className="fishes">
                 {Object.keys(this.state.fishes).map(key => 
                 <Fish 
@@ -68,7 +69,7 @@ class App extends React.Component {
                 />)}
               </ul>
           </div>
-          <Order fishes={this.state.fishes} order={this.state.order}/> 
+          
           <Inventory addFish ={this.addFish} loadSampleFishes={this.loadSampleFishes}/>
                 
         </div>

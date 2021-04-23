@@ -10,8 +10,8 @@
 body {
   background: url(./images/pikist.jpg) repeat;
   background-size: cover;
-  color: tomato;
-  text-shadow: black -1px 1px;
+  color: whitesmoke;
+  height: 100vh;
 }
 
 #root {
@@ -28,7 +28,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
 }
 
 .app-container {
@@ -45,7 +44,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
   width: 100vw;
   /*h1, h2, h3 {
 		color: white;
@@ -67,7 +65,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
   width: 100vw;
   padding: 10px;
 }
@@ -110,6 +107,8 @@ body {
 
 .app-container h1 {
   margin: 15px 0;
+  color: DarkGoldenRod;
+  text-shadow: black -1px 4px;
 }
 
 .app-container h2 {
@@ -118,6 +117,64 @@ body {
 
 .app-container .tagline {
   text-align: center;
+  color: lime;
+  text-shadow: black -1px 1px;
+  -webkit-animation: tagline-animation 5s linear 2s infinite alternate;
+          animation: tagline-animation 5s linear 2s infinite alternate;
+}
+
+@-webkit-keyframes tagline-animation {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  25% {
+    -webkit-transform: rotateY(20deg);
+            transform: rotateY(20deg);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  50% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  75% {
+    -webkit-transform: rotateY(-20deg);
+            transform: rotateY(-20deg);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@keyframes tagline-animation {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  25% {
+    -webkit-transform: rotateY(20deg);
+            transform: rotateY(20deg);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  50% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  75% {
+    -webkit-transform: rotateY(-20deg);
+            transform: rotateY(-20deg);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
 }
 
 .app-container .menu {
@@ -150,18 +207,42 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(./images/stone_background.jpg);
+  background-image: url(./images/sand1.jpg);
   background-size: cover;
   margin: 10px 0;
   padding: 15px;
   border-radius: 20px;
-  -webkit-box-shadow: black -2px 2px;
-          box-shadow: black -2px 2px;
+  -webkit-box-shadow: black -1px 1px;
+          box-shadow: black -1px 1px;
 }
 
 .app-container .menu-fish .description {
   text-align: justify;
+  margin: 5px 0;
   width: 235px;
+  color: burlywood;
+  text-shadow: black -1px 1px;
+}
+
+.app-container .menu-fish h3 {
+  color: tomato;
+  text-shadow: black -1px 1px;
+}
+
+.app-container .menu-fish button {
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.app-container .menu-fish button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.app-container .menu-fish button[disabled]:hover {
+  color: tomato;
+  -webkit-transform: rotate(20deg) scale(1.1);
+          transform: rotate(20deg) scale(1.1);
 }
 
 .app-container img {
@@ -169,17 +250,42 @@ body {
   margin: 0 0 15px 0;
 }
 
+.app-container img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .app-container .order-wrap {
-  background-image: url(./images/stone_background.jpg);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  background-image: url(./images/sand1.jpg);
   background-size: cover;
-  margin: 10px 0;
+  margin: 20px 0 0 0;
   padding: 15px;
   border-radius: 20px;
-  -webkit-box-shadow: black -2px 2px;
-          box-shadow: black -2px 2px;
+  -webkit-box-shadow: black -1px 1px;
+          box-shadow: black -1px 1px;
 }
 
 .app-container .order-wrap li {
   margin: 15px;
+}
+
+.app-container .order-wrap h2 {
+  color: darkgoldenrod;
+  text-shadow: black -1px 1px;
+}
+
+.app-container .order-wrap li {
+  color: burlywood;
+  text-shadow: black -1px 1px;
+  list-style: none;
+}
+
+.app-container .order-wrap h3 {
+  color: tomato;
+  font-weight: 900;
+  text-shadow: black -1px 1px;
 }
 /*# sourceMappingURL=App.css.map */
